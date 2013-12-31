@@ -1,0 +1,50 @@
+
+public class Person {
+	
+	private String name;
+	//instance variables
+	//height is measured in meters
+	private double height;
+	//mass is measured in kg
+	private double mass;
+	private double bMI;
+	//waist is measured in centimeters
+	private double waist;
+		
+		
+	public Person(String name, double height, double mass, double waist)
+	{
+		this.name = name;
+		this.height = height;
+		this.mass = mass;
+		this.waist = waist;
+		this.bMI = this.bMI(height, mass);
+		
+	}
+	
+	//This method should take parameters of a person and return BMI
+	//and basic information to calculate nutrition
+	public double bMI(double height, double mass)
+	{
+	//BMI = weight in kg divided by height in m squared)
+	//underweight (<18.5 kg/m2), normal weight (18.5-24.9 kg/m2), overweight (25-29.9 kg/m2), or obese (>30 kg/m2) . 
+	//waist circumpherence decides apple or pear shape
+		return mass/(Math.pow(height, 2));
+		
+	}
+	
+	public void report()
+	{
+		System.out.println(name);
+		System.out.println(height);
+		System.out.println(mass);
+		System.out.println(mass);
+		System.out.println(bMI);
+	}
+
+	//Person grant = new Person("Grant", 1.8288, 90.7185, 86.36);
+	
+	
+}
+
+

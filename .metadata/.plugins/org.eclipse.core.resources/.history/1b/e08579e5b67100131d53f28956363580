@@ -1,0 +1,23 @@
+
+class Object
+{
+	private double mass;
+	private int x;
+	private int y;
+	private int z;
+	
+	public double gravity(double mass)
+	{
+		
+		return
+	}
+}
+
+
+
+public class Sanagami {
+	public static void main(String[] args)
+	{
+	
+	}
+}

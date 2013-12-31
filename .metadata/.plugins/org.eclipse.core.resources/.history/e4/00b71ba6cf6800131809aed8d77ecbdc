@@ -1,0 +1,26 @@
+
+
+
+
+public class Calculator 
+{
+	
+	
+	
+	//constructor
+	public Calculator()
+	{
+		
+	}
+	
+	
+		
+		
+		
+	}
+	public static void main(String[] args)
+	{
+		System.out.println("New Project!");
+	}
+	
+}

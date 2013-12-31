@@ -1,0 +1,18 @@
+
+
+
+
+public class Calculator 
+{
+	public double Person()
+	{
+		//This method should take parameters of a person and return BMI
+		//and basic information to calculate nutrition
+		return 1;
+	}
+	public static void main(String[] args)
+	{
+		System.out.println("New Project!");
+	}
+	
+}

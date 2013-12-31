@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+
+public class Person {
+	
+	private String name;
+	//instance variables
+	//height is measured in meters
+	private double height;
+	//mass is measured in kg
+	private double mass;
+	private double bMI;
+	//waist is measured in centimeters
+	private double waist;
+		
+		
+	public Person()
+	{
+		Scanner reader3 = new Scanner(System.in);
+		System.out.println("Enter height");
+		this.name = reader3.nextString();
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Enter height");
+		this.height = reader.nextDouble();
+		Scanner reader1 = new Scanner(System.in);
+		System.out.println("Enter mass");
+		this.mass = reader1.nextDouble();;
+		Scanner reader2 = new Scanner(System.in);
+		System.out.println("Enter waist size");
+		this.waist = reader2.nextDouble();;
+		this.bMI = this.bMI(height, mass);
+		
+	}
+	
+	//This method should take parameters of a person and return BMI
+	//and basic information to calculate nutrition
+	public double bMI(double height, double mass)
+	{
+	//BMI = weight in kg divided by height in m squared)
+	//underweight (<18.5 kg/m2), normal weight (18.5-24.9 kg/m2), overweight (25-29.9 kg/m2), or obese (>30 kg/m2) . 
+	//waist circumpherence decides apple or pear shape
+		return mass/(Math.pow(height, 2));
+		
+	}
+	
+	public void report()
+	{
+		System.out.println(name);
+		System.out.println(height);
+		System.out.println(mass);
+		System.out.println(waist);
+		System.out.println(bMI);
+	}
+
+	public static void main(String[] args){
+		//1.8288 m
+	Person grant = new Person("Grant", 90.7185, 86.36);
+	grant.report();
+	}
+}
+
+

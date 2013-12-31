@@ -1,0 +1,15 @@
+
+class Object
+{
+	private double mass;
+	
+}
+
+
+
+public class Sanagami {
+	public static void main(String[] args)
+	{
+	
+	}
+}
